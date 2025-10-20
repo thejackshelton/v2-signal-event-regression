@@ -1,0 +1,9 @@
+@layer qds {
+  [data-qds-checkbox-indicator] {
+    user-select: none;
+  }
+
+  [data-qds-checkbox-indicator][data-hidden] {
+    display: none;
+  }
+}
