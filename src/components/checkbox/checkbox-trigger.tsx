@@ -30,11 +30,8 @@ export const CheckboxTrigger = component$(
     });
 
     const handleClick$ = $(() => {
-      if (context.checked.value === "mixed") {
-        context.checked.value = true;
-      } else {
-        context.checked.value = !context.checked.value;
-      }
+      console.log("CLICK EVENT FIRED");
+      context.checked.value = !context.checked.value;
     });
 
     const handleKeyDownSync$ = sync$((e: KeyboardEvent) => {
